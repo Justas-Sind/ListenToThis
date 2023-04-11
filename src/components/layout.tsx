@@ -13,7 +13,7 @@ function PageLayout(props: PropsWithChildren) {
           <Link href="/">
             <div></div>
           </Link>
-          {!isSignedIn && <SignInButton />}
+          {!isSignedIn && <SignInButton mode="modal" redirectUrl="/listen" />}
           {isSignedIn && <UserButton />}
         </nav>
       </header>
