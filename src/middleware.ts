@@ -30,15 +30,5 @@ export default withClerkMiddleware((request: NextRequest) => {
 });
  
 export const config = {
-  matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - _next
-     * - static (static files)
-     * - favicon.ico (favicon file)
-     * - public folder
-     */
-    "/((?!static|.*\\..*|_next|favicon.ico).*)",
-    "/",
-  ],
+  matcher: "/((?!_next/image|_next/static|favicon.ico).*)",
 }
