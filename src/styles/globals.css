@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply transition-colors duration-300;
+  color: #ffffff00;
+}
+
+button,
+a,
+img,
+div {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  -webkit-touch-callout: none;
+}
+
